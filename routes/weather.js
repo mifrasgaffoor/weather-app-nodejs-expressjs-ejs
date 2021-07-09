@@ -14,7 +14,7 @@ router .get("/", (req,res)=>{
 
 router.post("/" , async(req,res)=>{
  const city = req.body.city;
-const apikey = "7d02f19d2d5e7392ebbee8be930adf59"
+const apikey = nul
  const Url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`
 
 
