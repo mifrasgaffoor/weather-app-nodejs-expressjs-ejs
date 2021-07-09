@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="composs">
+          <img class="icon" src="/icons/weather.png" alt="" />
+        </div>
+      </header>
+      <div class="weather-title">
+        <h1>Weather Application</h1>
+        <p>
+          Enter the current city name of your country <br />
+          for get the weather
+        </p>
+      </div>
+
+      <form action="\" method="POST">
+        <input type="text" name="city" placeholder="Enter the city" />
+      </form>
+      <div class="result">
+        <% if(temp!== null) {%>
+
+        <h1 class="temp"><%= temp %>°</h1>
+        <%} %>
+
+        <div class="icon-des">
+          <% if(icon !== null) {%>
+
+          <img
+            src="http://openweathermap.org/img/w/<%= icon %>.png"
+            alt=""
+            class="iconss"
+          />
+
+          <%} %> <% if(des !== null) {%>
+
+          <h3><%= des %></h3>
+
+          <%} %>
+        </div>
+
+        <% if(temp!== null) {%>
+
+        <p class="city"><%= city %></p>
+        <%} %>
+
+        <p class="name">Design by : Mifras Gaffoor</p>
+      </div>
+    </div>
+  </body>
+</html>
